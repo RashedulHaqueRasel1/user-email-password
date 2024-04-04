@@ -1,6 +1,7 @@
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import auth from "../../firebase/fireBase";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Registration() {
 
@@ -47,7 +48,7 @@ export default function Registration() {
         <div>
 
             <div className="mx-auto md:w-1/2">
-                <h2 className="text-4xl mb-8">This is Registration</h2>
+                <h2 className="text-xl mb-8">This Registration is Properly Not Working ! . Go to <Link to={'/heroRegistration'} className="text-rose-700">Hero Registration</Link></h2>
 
                 <form onSubmit={handleRegistration}>
 
